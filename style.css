@@ -1,99 +1,96 @@
-.page-title {
-    font-family: 'Times New Roman', serif;
-    font-size: 3.5rem;
-    letter-spacing: 3px;
-    color: #333333;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between the flowers and the text */
-    margin-bottom: 30px;
-}
-
-.sakura-flower {
-    width: 50px;
-    height: auto;
-}
-
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Times New Roman', serif;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-   
-    background-image:url("BACKGROUND.png");
+
+background-image: url('../BACKGROUND.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* 2. Style the header and center it */
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.page-title {
-    font-size: 3rem;
-    letter-spacing: 3px;
-    color: #333;
-    margin: 0;
-}
-
-.header-sakura {
-    width: 35px;
-    height: auto;
-}
-
-
-.button-container {
+.about-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+}
+
+.header-banner {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.header-image {
+    width: 260px;
+    height: auto;
+    display: block;
 }
 
 
-.button-container a {
-    text-decoration: none;
-    outline: none;
-    border: none;
+
+.about-description {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.15rem;
+    color: #e57399;
+    line-height: 1.6;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+
+.footer-section {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
-.image-button {
-    width: 400px;
+.sakura-bottom-left {
+    position: absolute;
+    left: 40px;
+    bottom: -10px;
+    width: 80px;
     height: auto;
-    border: none;
-    outline: none;
+}
+
+.home-btn-link {
+    text-decoration: none;
+}
+
+.home-btn {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    padding: 8px 32px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: all 0.2s ease;
 }
 
-
-.image-button:hover {
-    transform: scale(1.04);
-    opacity: 0.95;
-}
-
-.image-button:active {
-    transform: scale(0.96);
+.home-btn:hover {
+    background-color: #f497b9;
+    color: #ffffff;
+    border-color: #f497b9;
+    transform: scale(1.05);
 }
